@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>رسم شخصية البربري</title>
+  <style>
+    /* قواعد CSS لرسم الشخصية */
+    .barbarian {
+      width: 200px;
+      height: 200px;
+      background-color: #FF0000; /* لون خلفية الشخصية */
+      position: relative;
+    }
+    .sword {
+      width: 50px;
+      height: 150px;
+      background-color: #000000; /* لون السيف */
+      position: absolute;
+      top: 50px;
+      left: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="barbarian"></div>
+  <div class="sword"></div>
+
+  <script>
+    // قواعد JavaScript للتحكم في حركة الشخصية (استخدمت هنا الشفرة الثابتة للتبسيط)
+    window.onload = function() {
+      var sword = document.querySelector('.sword');
+
+      // تحريك السيف
+      sword.style.transform = 'rotate(45deg)';
+    };
+  </script>
+</body>
+</html>
